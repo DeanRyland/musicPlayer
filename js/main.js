@@ -25,6 +25,7 @@ function initAudio(element){
 
 	//Insert Cover
 	$('img.cover').attr('src','img/covers/' + cover);
+	$('img.coverbg').attr('src', 'img/covers/' + cover);
 
 	$('#playlist li').removeClass('active');
 	element.addClass('active');
