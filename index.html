@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+<<<<<<< HEAD
 
   <head>
     <meta charset='utf-8'>
@@ -77,3 +78,58 @@ $ git checkout gh-pages
 
   </body>
 </html>
+=======
+	<head>
+		<title>HTML5 Audio Player</title>
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+	<body>
+
+		<div id="cover_bg"><img class="coverbg"></div>
+
+		<div id="container">
+			<div id="audio-img">
+				<img class="cover">
+			</div>
+			<div id="audio-player">
+				<div id="audio-info">
+					<span class="artist"></span> - <span class="title"></span>
+				</div>
+				<span id="vol-up"> - </span>
+				<input id="volume" type="range" min="0" max="10" value="5">
+				<span id="vol-down"> + </span>
+				<br>
+				<div id="audio-buttons">
+					<button id="prev"></button>
+					<button id="play"></button>
+					<button id="pause"></button>
+					<button id="stop"></button>
+					<button id="next"></button>
+				</div>
+				<div class="clearfix"></div>
+				<div id="tracker">
+					<div id="progressbar">
+						<span id="progress"></span>
+					</div>
+					<span id="duration"></span>
+				</div>
+				<div class="clearfix"></div>
+				<ul id="playlist">
+					<li song="Big Wreck - Albatross" cover="bwa.jpg" artist="Big Wreck">Albatross</li>
+					<li song="Gavin McDraw - I Don't Want to Be" cover="gdc.jpg" artist="Gavin McDraw">I Don't Want to Be</li>
+					<li song="Matthew Good Band - 0900 PM" cover="mgb.jpg" artist="Matthew Good Band">09:00 P.M.</li>
+					<li song="John Mayer - Queen of California" cover="jmc.jpg" artist="John Mayer">Queen of California</li>
+					<li song="Cage The Elephant - Aint No Rest For The Wicked" cover="cte.jpg" artist="Cage The Elephant">Ain't No Rest For The Wicked</li>
+				</ul>
+			</div>
+		</div>
+
+		<div id="copyright">&copy; Ryland Dean</div>
+		<script src="js/jquery-2.1.1.min.js"></script>
+		<script src="js/main.js"></script>
+
+
+	</body>
+
+</html>
+>>>>>>> master
