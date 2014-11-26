@@ -34,6 +34,7 @@ body {
 	opacity: 0.5;
 }
 
+
 #container {
 	width: 330px;
 	min-height: 400px;
@@ -45,6 +46,7 @@ body {
 	-webkit-border-radius: 10px;
 	border-radius: 10px;
 	position: relative;
+	z-index: 60;
 }
 
 #audio-img {
@@ -176,6 +178,15 @@ button#next {
 	position: absolute;
 	top: 9px;
 	left: 13px;
+
+	/*height: 8px; width: 75%; margin: 2px; display: block;*/ rgba(255,255,255,0.5), 0 1px 1px rgba(0,0,0,0.5); background: #8aa7f7;
+	background: -moz-linear-gradient(left, #8aa7f7 0%, #77d3e7 34%, #43eab2 65%, #95ef83 100%);
+	background: -webkit-gradient(linear, left top, right top, color-stop(0%,#8aa7f7), color-stop(34%,#77d3e7), color-stop(65%,#43eab2), color-stop(100%,#95ef83));
+	background: -webkit-linear-gradient(left, #8aa7f7 0%,#77d3e7 34%,#43eab2 65%,#95ef83 100%);
+	background: -o-linear-gradient(left, #8aa7f7 0%,#77d3e7 34%,#43eab2 65%,#95ef83 100%);
+	background: -ms-linear-gradient(left, #8aa7f7 0%,#77d3e7 34%,#43eab2 65%,#95ef83 100%);
+	background: linear-gradient(to right, #8aa7f7 0%,#77d3e7 34%,#43eab2 65%,#95ef83 100%);
+
 }
 
 #duration {
