@@ -39,7 +39,7 @@ body {
 	width: 330px;
 	min-height: 400px;
 	background: #F2F2F2;
-	overflow: auto;
+	overflow-x: hidden;
 	margin: 5% auto 50px;
 	border: #666666 solid 2px;
 	-moz-border-radius: 10px;
@@ -102,51 +102,58 @@ input#volume::-webkit-slider-thumb {
 	width: 90%;
 	display: block;
 	margin: 15px auto;
-	margin-left: 23px;
+	margin-left: 16%;
 	overflow: auto;
 }
 
 button#play {
-	width: 64px;
-	height: 64px;
+	width: 42px;
+	height: 32px;
 	background: url(../img/play.png) no-repeat;
 	float: left;
+	margin: 0 0 0 5%;
+	border-right: 1px solid #666666;
 }
 
 button#pause {
-	width: 64px;
-	height: 64px;
+	width: 44px;
+	height: 32px;
 	background: url(../img/pause.png) no-repeat;
 	float: left;
+	margin: 0 0 0 5%;
+	border-right: 1px solid #666666;
 }
 
 button#stop {
-	width: 64px;
-	height: 64px;
+	width: 50px;
+	height: 32px;
 	background: url(../img/stop.png) no-repeat;
 	float: left;
+	border-right: 1px solid #666666;
 }
 
 button#prev {
-	width: 48px;
-	height: 48px;
+	width: 46px;
+	height: 32px;
 	background: url(../img/prev.png) no-repeat;
 	float: left;
-	margin-left: 9%;
-	margin-top: 8px;
+	border-right: 1px solid #666666;
+	margin: 0 0 0 5%;
 }
 
 button#next {
-	width: 48px;
-	height: 48px;
+	width: 32px;
+	height: 32px;
 	background: url(../img/next.png) no-repeat;
 	float: left;
-	margin-top: 8px;
+	margin: 0 0 0 5%;
 }
 
 #playlist {
 	list-style: none;
 	padding: 10px;
+	max-height: 200px;
+	overflow-y: scroll;
 }
 
 #playlist li {
@@ -159,6 +166,12 @@ button#next {
 	font-weight: bold;
 	padding: 3px;
 	background: #999999;
+	border-top-right-radius: 10px;
+	border-bottom-right-radius: 10px;
+	-moz-border-top-right-radius: 10px;
+	-moz-border-bottom-right-radius: 10px;
+	-webkit-border-top-right-radius: 10px;
+	-webkit-border-bottom-right-radius: 10px;
 }
 
 #progressbar {

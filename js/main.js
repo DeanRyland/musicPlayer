@@ -34,7 +34,7 @@ function initAudio(element){
 //Play Button
 $('#play').click(function(){
 	audio.play();
-	$('#play').hide();
+	$('#play').hide(); 
 	$('#pause').show();
 	$('#duration').fadeIn(400);
 	showDuration();
@@ -46,6 +46,24 @@ $('#pause').click(function(){
 	$('#pause').hide();
 	$('#play').show();
 });
+
+
+$(window).keypress(function(e) {
+  if (e.keyCode == 0 || e.keyCode == 32) {
+    if (play){
+    audio.pause();
+    play = false;
+    $('#pause').hide();
+	$('#play').show();
+  } else {
+    audio.play();
+    play = true;
+    $('#play').hide();
+    $('#pause').show();
+  }
+  }
+});
+
 
 //Stop Button
 $('#stop').click(function(){
